@@ -1,3 +1,5 @@
+### 注：本文来自[译文](https://github.com/chadluo/CSS-Guidelines/blob/master/README.md#id)
+
 # 通用 CSS 笔记、建议与指导
 
 ---
