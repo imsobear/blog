@@ -24,3 +24,6 @@
 * `state`: 控制动画播放暂停：
      - running: 默认；
      - paused: 暂停动画；
+     
+附加：还有一个`animation-fill-mode`，还没有成为标准，但支持animation的浏览器都支持这个属性，
+`forwards`参数表示动画结束后停在最后一帧。
