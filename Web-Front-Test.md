@@ -1,5 +1,7 @@
 ### 整理一些前端笔试题
 
+========
+
 #### 第一期
 1. 在0级DOM事件模型，通过 onclick 属性来绑定事件，比如: dom.onclick = function(){}; 这个方式最大的缺点之一是每个元素上只能绑定一个事件监听函数。
 请实现一个函数 click, 基于0级DOM事件模型实现，但是可以在一个元素上绑定多个事件监听函数，函数声明如下：
@@ -9,7 +11,7 @@ function click(element, callback) {…}
 format("#{name} say: #{msg}", {name: 'Bob', msg: 'hello!'})
 输出： "Bob say: hello!" 
 
-答案：
+**答案：**
 ```javascript
 // By 大果
 function format(str, datas) {
@@ -35,6 +37,7 @@ function format2(str,obj){
 #### 第二期
 
 1. 以下两段代码有什么不同？
+
 ```javascript
 setTimeout(function(){
 /* 代码块... */ 
