@@ -47,7 +47,7 @@
 
 --OVER--
 
-[Me](https://github.com/tomayday/MyBlog/blob/master/assets/images/me.jpg?raw=true)
+![Me](https://github.com/tomayday/MyBlog/blob/master/assets/images/me.jpg?raw=true)
 
 
 
