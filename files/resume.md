@@ -35,8 +35,8 @@
   + 金币流通以及一次会员活动日的页面。
 
 在校期间: 
-  + [微信悦读](http://wefeed.sinaapp.com/)，已停止维护；
-  + [途趣网](https://github.com/tomayday/ituqu)：基于Rails框架，已下线；
+  + [微信悦读](http://wefeed.sinaapp.com/)；
+  + [途趣网](https://github.com/tomayday/ituqu)：基于Rails框架；
 
 =======
 #### 自我评价：
