@@ -1,4 +1,4 @@
-### 大果的个人博客（文章在issue里）
+### 大果的个人博客
 
 ---------
 
@@ -11,6 +11,9 @@
 
 
 把生活沉淀下来。
+
+======
+**看文章，请移步[issue](https://github.com/tomayday/MyBlog/issues?state=open)**
 
 
 
