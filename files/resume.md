@@ -19,8 +19,9 @@
 - 掌握`HTML`、`CSS` 和 `JavaScript`开发前端页面；
 - 熟悉`jQuery` 和 `Kissy`框架；
 - 了解`HTML5` 和 `CSS3` ，并有一些实践；
-- 平时使用`git`作为版本控制工具；
-- 了解`grunt`工具、 `node.js`、`CommonJS`规范。
+- 平时使用`git`作为版本控制工具，`sublime`作为默认编辑器；
+- 了解`grunt`工具、 `node.js`、`CommonJS`规范；
+- 玩过`Ubuntu` 和 `Ruby on Rails`。
 
 =======
 #### 实习经验: 
