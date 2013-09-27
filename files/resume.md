@@ -7,9 +7,11 @@
 * 年龄： 22
 * 学校：西安电子科技大学
 * 毕业日期： 2014.8
+* 个人博客： [http://goo.gl/cPExKi](https://github.com/tomayday/MyBlog/issues?state=open)
+* github: [github.com/tomayday](https://github.com/tomayday)
+* 联系电话：183-9262-2010
+* Email： maydayjust#gmail.com
 * 应聘工作： 前端工程师
-* 个人博客： [Blog](https://github.com/tomayday/MyBlog/issues?state=open)
-* github: [Just This One](https://github.com/tomayday)
 
 =======
 #### 基本技能：
@@ -41,13 +43,11 @@
 =======
 #### 自我评价：
 
-一个喜欢产品设计的前端工程师，平时爱好有读书、篮球、骑车逛，然后会思考各种各样的问题。
+一个喜欢产品设计的前端工程师，平时爱好有读书、篮球、骑车逛，然后会思考各种各样的问题，我觉得我是一个挺有幽默感的男生~
 
 带着自己的性格生活。
 
 --OVER--
-
-![Me](https://github.com/tomayday/MyBlog/blob/master/assets/images/me.jpg?raw=true)
 
 
 
