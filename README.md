@@ -13,7 +13,8 @@
 把生活沉淀下来。
 
 ======
-**看文章，请移步[issue](https://github.com/tomayday/MyBlog/issues?state=open)**
+
+**看文章，请移步 [issue](https://github.com/tomayday/MyBlog/issues?state=open)**
 
 
 
