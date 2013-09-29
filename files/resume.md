@@ -3,15 +3,15 @@
 ---------
 #### 个人信息：
 
-* 姓名： 刘雄 
-* 年龄： 22
+* 姓名：刘雄 
+* 年龄：22
 * 学校：西安电子科技大学
-* 毕业日期： 2014.8
-* 个人博客： [http://goo.gl/cPExKi](https://github.com/tomayday/MyBlog/issues?state=open)
+* 毕业日期：2014.8
+* 个人博客：[http://goo.gl/cPExKi](https://github.com/tomayday/MyBlog/issues?state=open)
 * github: [github.com/tomayday](https://github.com/tomayday)
 * 联系电话：183-9262-2010
-* Email： maydayjust#gmail.com
-* 应聘工作： 前端工程师
+* Email：maydayjust#gmail.com
+* 应聘工作：前端工程师
 
 =======
 #### 基本技能：
@@ -31,20 +31,19 @@
 实习期间，主要学习了`kissy`框架、了解淘宝的业务以及一些工具的使用，在此期间主要做的项目有：
 
   + [新人引导页面](http://www.taobao.com/go/act/vip/newer/guidepage.php)，淘宝新人引导页面，主要是各种动画以及逻辑的控制，使用的技术主要是`kissy`和部分`css3`；
-  + [新人地图](http://vip.taobao.com/newuser/mapHome.htm)，由三部分组成，地图首页、地图详情页以及攻略详情页，首页是`css3`动画 + `kissy` 动画；地图详情页需要有大量的编辑内容，因此有一些配置文件以及懒加载；
+  + [新人地图](http://vip.taobao.com/newuser/mapHome.htm)，由三部分组成，地图首页、地图详情页以及攻略详情页，
+首页是`css3`动画 + `kissy` 动画；地图详情页需要有大量的编辑内容，因此有一些配置文件以及懒加载；
   + 金币流通业务和会员日活动。
 
 =======
 #### 项目经验: 
 
-实习期间： 
-  + [新人引导页面](http://www.taobao.com/go/act/vip/newer/guidepage.php)，基于kissy 和 css3；
-  + [新人地图](http://vip.taobao.com/newuser/mapHome.htm)，包括点击之后的攻略页面和手册页面；
-  + 金币流通以及一次会员活动日的页面。
+除以上的实习经验外，以前在学校也做过一些小的项目：
 
-在校期间: 
   + [微信悦读](http://wefeed.sinaapp.com/)；
   + [途趣网](https://github.com/tomayday/ituqu)：基于Rails框架；
+  + 跟同学合作的智能小船，通过电脑控制方向以及无线传输图片（大一）；
+  + 基于 `C#` 的图像处理算法用来测距（大一）；
 
 =======
 #### 自我评价：
