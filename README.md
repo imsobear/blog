@@ -1,11 +1,14 @@
-### 小果的个人博客
+
+### 个人博客（大果、小果、二果、帅果...）
+
 --------------------
-> 告诉自己，把生活沉淀下来。
 
 
-迁移至 [sobear.me](http://sobear.me)
+> 杭州，前端，骑行，爱摄影，爱美食。
 
-文章列表: **[issue](https://github.com/tomayday/MyBlog/issues?state=open)**
+
+- [技术博客 issues](https://github.com/tomayday/MyBlog/issues?state=open)
+- [生活博客 sobear.me](http://sobear.me)
 
 
 
