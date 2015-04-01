@@ -1,12 +1,17 @@
-
-### 个人博客（大果、小果、二果、帅果...）
-
---------------------
+# 果哥的三分地
 
 
-> 杭州，前端，骑行，爱摄影，爱美食。
-
-- [技术博客 issues](https://github.com/tomayday/MyBlog/issues?state=open)
-- [生活博客 sobear.me](http://sobear.me)
+一亩三分地，在这里记录记录生活:)
 
 
+## About Me:
+
+
+
+## How To Add New Artical
+
+
+1. 在 `SUMMARY.md` 添加对应的章节，章节名称约定：`name-2015-03-10.md`
+2. 运行 `gitbook init` 生成对应的 md 文件，编辑之
+3. 完成后执行 `make deploy`
+4. get done!
