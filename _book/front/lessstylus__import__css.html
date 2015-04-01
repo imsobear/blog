@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="1427866104552">
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="1427866257144">
     
 
 <div class="book-summary">
@@ -304,9 +304,8 @@ body </span>{
 }
 </code></pre>
 <p>注意，<code>@import &#39;./header.css&#39;</code> 会原封不动的 copy 过去，但是某种需求下我是希望直接将 css 的内容 copy 过去的，stylus 提供的方式是加参数：</p>
-<pre><code class="lang-shebang">stylus index.styl &gt; index.css --include-css
-</code></pre>
-<p>对于同样的问题，<code>less</code> 是如何解决的呢：</p>
+<pre><code>stylus index.styl &gt; index.css --include-css
+</code></pre><p>对于同样的问题，<code>less</code> 是如何解决的呢：</p>
 <pre><code class="lang-css"><span class="hljs-comment">/* index.less */</span>
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> (inline) <span class="hljs-string">'./header.css'</span></span>
 </code></pre>
