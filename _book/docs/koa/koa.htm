@@ -1,0 +1,348 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 0.9.8-3
+    site: https://github.com/ksky521/nodePPT
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>koa step by step - By 大果</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt2.0.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    <link rel="stylesheet" media="print" href="./css/pdf.css">
+    <link rel="stylesheet" href="./js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide fill" style="background-color:#049DBF"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>koa step by step</h1>
+<h2>By 大果</h2>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Hello World</h1>
+<pre><code class="javascript">var koa = require(&#39;koa&#39;);
+
+var app = koa();
+
+app.use(function *(){
+  this.body = &#39;Hello World&#39;;
+});
+
+app.listen(3030, function () {
+    console.log(&#39;App server listen on port %d&#39;, 3030);
+});
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>koa 关键字</h1>
+<ul>
+<li>作者：TJ</li>
+<li>框架自带的异步解决方案：co + generator</li>
+<li>更加轻量：本身不带任何中间件</li>
+<li>更加友好：ctx &amp; error handle</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>About TJ</h1>
+<ul>
+<li>有点杀马特、喜欢摄影的艺术家</li>
+<li>程序员：Koa、Co、Express、jade、mocha、stylus...</li>
+</ul>
+<p><img src="http://gtms03.alicdn.com/tps/i3/TB1gudVHXXXXXaFXFXXjYhj3XXX-748-416.png" alt="TJ in medium"></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>异步方案</h1>
+
+</hgroup><article>
+
+<ul>
+<li>ES*: callback hell</li>
+<li>ES6: promise</li>
+<li>ES6: generator</li>
+<li>ES7: await/async</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>generator 介绍</h1>
+<ul>
+<li>ES6 标准方法</li>
+<li>原本不是用来解决异步问题的</li>
+<li><code>node --harmony example.js</code> // 0.11.x</li>
+</ul>
+<pre><code class="javacript">function *test () {
+    yield 1;
+    yield function () {
+        return &#39;hello world&#39;
+    }();
+    yield [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+    return &#39;over&#39;;
+}
+var gen = test();
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+</code></pre>
+<pre><code class="shell">{ value: 1, done: false }
+{ value: &#39;hello world&#39;, done: false }
+{ value: [ &#39;a&#39;, &#39;b&#39;, &#39;c&#39; ], done: false }
+{ value: &#39;over&#39;, done: true }
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>使用 co</h1>
+<h2>co series</h2>
+<pre><code>var co = require(&#39;co&#39;);
+var fs = require(&#39;co-fs&#39;);
+
+co(function *() {
+    var dataFile = yield fs.stat(&#39;./data.json&#39;);
+    var pkgFile = yield fs.stat(&#39;./package.json&#39;);
+    console.log(dataFile.size, pkgFile.size);
+}).catch(function (err) {
+    console.log(err);
+});
+</code></pre><h2>co parallel</h2>
+<pre><code>yield ids.map(function (id) {
+    return project.update({_id: id, owner: oldOwner}, {$set: {owner: owner}});
+});
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>使用 co</h1>
+<h2>callback -&gt; thunk</h2>
+<pre><code>var co = require(&#39;co&#39;);
+var request = require(&#39;request&#39;);
+var thunkify = require(&#39;thunkify&#39;);
+function getFooter (callback) {
+    request.get(&#39;http://common.fed.taobao.net/footer.html&#39;, function (err, res, body) {
+        err? callback(err): callback(null, body)
+    });
+}
+var getFooter = thunkify(getFooter)
+co(function *() {
+    var body = yield getFooter();
+});
+</code></pre><h2>use co</h2>
+<pre><code>var request = require(&#39;co-request&#39;);
+
+co(function *() {
+    var body = yield request(&#39;http://common.fed.taobao.net/footer.html&#39;);
+});
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>使用 co</h1>
+
+</hgroup><article>
+
+<ul>
+<li>co-request</li>
+<li>co-fs</li>
+<li>co-parallel</li>
+<li>co-body</li>
+<li>co-render</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>koa 中间件</h1>
+
+</hgroup><article>
+
+<ul>
+<li>koa-bodyparser: 解析 post 请求的 body</li>
+<li>koa-views: 视图渲染</li>
+<li>koa-logger: 所有请求的 log 信息</li>
+<li>koa-router: restful route</li>
+<li>koa-session</li>
+<li>koa-static: 静态服务器</li>
+<li>co-*</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>koa 中间件</h1>
+<ul>
+<li>与 express 的差异：<code>return yield next</code></li>
+</ul>
+<p><br/></p>
+<pre><code>function *auth (next) {
+
+    if (/(\.js|\.css|\.ico)$/.test(this.path) || this.session.user) {
+        // here here here
+        return yield next;
+    }
+
+    var data = yield common.bbc(&#39;fork&#39;, {token: token});
+    var user = yield common.bbc(&#39;getUserInfoByEmpId&#39;, {empId: data.empId});
+
+    this.session.user = user;
+
+    yield next;
+  }
+};
+
+app.use(auth);
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>更加友好的访问上下文</h1>
+<ul>
+<li>使用 <code>__defineGetter</code>, <code>__defineSetter__</code> 让开发者更加方便的访问 req/res 的上下文方法：</li>
+</ul>
+<p><img src="http://gtms01.alicdn.com/tps/i1/TB1FI4UHXXXXXcmXFXXUDouRVXX-591-739.png" alt="">
+<!-- ![](http://gtms01.alicdn.com/tps/i1/TB1R26fGVXXXXXxapXX6AUzUpXX-521-505.png) --></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>更加方便的错误处理</h1>
+<ul>
+<li>监听 koa app 中的所有错误：</li>
+</ul>
+<pre><code>app.on(&#39;error&#39;, function(err, ctx){
+    // 如果在 http 请求时发生，则会有上下文环境 ctx
+    log.error(&#39;server error&#39;, err);
+});
+</code></pre><ul>
+<li>使用 http-error 创建错误对象</li>
+<li>使用 try/catch 捕获错误</li>
+</ul>
+<pre><code>try {
+    yield project.remove({_id: id});
+} catch (err) {
+    log.error(&#39;Delete error:&#39;, err, id)
+    this.throw(400, &#39;Server error&#39;);
+}
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>番外篇：mongodb</h1>
+<ul>
+<li>非关系型数据库：不要带着关系数据库的思维，上去就是一个关联表...</li>
+<li>特点：复杂写，简单读，更新要人命 &amp; 灵活</li>
+<li>熟悉数组操作：$push, $pop, $</li>
+</ul>
+<pre><code class="javascript">yield project.update({&#39;pages.url&#39;: data.url}, {$pop: {
+    pages: &#39;pages.$&#39;
+}});
+
+// 再在新的 project 中创建
+yield project.update({_id: data.projectId}, {$push: {
+    pages: {
+        url: data.url,
+        devs: data.devs,
+        dev: data.dev,
+        git: data.git,
+        time: new Date()
+    }
+}});
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>番外篇：handlebars</h1>
+<ul>
+<li>弱逻辑的模板引擎<ul>
+<li>优点：模板本身更加简洁</li>
+<li>缺点：逻辑少的想去屎...</li>
+</ul>
+</li>
+<li>准备好一套 helpers，前后端如何共享？</li>
+</ul>
+<p><img src="http://gtms04.alicdn.com/tps/i4/TB1_FNTHXXXXXXuXVXXmBU1TFXX-624-552.png" width="600" height="400"></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>总结</h1>
+<ul>
+<li>有机会的话多去尝试新的东西</li>
+<li>承担新事物的风险：半夜两点还早填自己的坑</li>
+<li>新的不一定好，但总能让你学到东西，比如我知道 promise，但在项目里依然是各种 callback hell</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide fill" style="background-color:#049DBF"><section class="slide-wrapper"><article>
+<h1 style="font-size:100px">Q &amp; A</h1>
+</article></section></slide>
+        <slide class="slide thank-you-slide segue nobackground">
+            <article class="flexbox vleft auto-fadein">
+                <h2>Q &amp; A</h2>
+                <h3>&lt;Thank You!&gt;</h3>
+            </article>
+        </slide>
+        <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+              <h2 style="color: white;">Powered By nodePPT v0.9.8-3</h2>
+            </article>
+          </slide>
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = location.pathname.split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'cards',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/hljs-0.8.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+<script src="./js/demo.js"></script>
+<link rel="stylesheet" href="./css/demo.css">
+</body>
+</html>
