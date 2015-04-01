@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="1427865508112">
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="1427866104552">
     
 
 <div class="book-summary">
@@ -288,30 +288,35 @@
                     
                         <h1 id="-lessstylus--import--css">如何编译 less/stylus 中 import 的 css</h1>
 <p>假设有这样一段代码：</p>
-<pre><code>// index.styl
+<pre><code class="lang-css"><span class="hljs-comment">/* index.styl */</span>
 
-@import &#39;./header.css&#39;
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'./header.css'</span>
 
-body {
-    color: black;
+body </span>{
+    <span class="hljs-tag">color</span>: <span class="hljs-tag">black</span>;
 }
-</code></pre><p>那执行 <code>stylus index.styl &gt; index.css</code> 编译后会生成这样的 <code>index.css</code>:</p>
-<pre><code>@import &#39;./header.css&#39;
+</code></pre>
+<p>那执行 <code>stylus index.styl &gt; index.css</code> 编译后会生成这样的 <code>index.css</code>:</p>
+<pre><code class="lang-css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'./header.css'</span>
 
-body {
-    color: black;
+body </span>{
+    <span class="hljs-tag">color</span>: <span class="hljs-tag">black</span>;
 }
-</code></pre><p>注意，<code>@import &#39;./header.css&#39;</code> 会原封不动的 copy 过去，但是某种需求下我是希望直接将 css 的内容 copy 过去的，stylus 提供的方式是加参数：</p>
-<pre><code>stylus index.styl &gt; index.css --include-css
-</code></pre><p>对于同样的问题，<code>less</code> 是如何解决的呢：</p>
-<pre><code>// index.less
-@import (inline) &#39;./header.css&#39;
-</code></pre><p>用 inline 这个参数来声明即可，然后运行：<code>lessc index.less</code>, 当然这里的 inline 参数也可以是其他，参看末尾的相关链接。</p>
+</code></pre>
+<p>注意，<code>@import &#39;./header.css&#39;</code> 会原封不动的 copy 过去，但是某种需求下我是希望直接将 css 的内容 copy 过去的，stylus 提供的方式是加参数：</p>
+<pre><code class="lang-shebang">stylus index.styl &gt; index.css --include-css
+</code></pre>
+<p>对于同样的问题，<code>less</code> 是如何解决的呢：</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* index.less */</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> (inline) <span class="hljs-string">'./header.css'</span></span>
+</code></pre>
+<p>用 inline 这个参数来声明即可，然后运行：<code>lessc index.less</code>, 当然这里的 inline 参数也可以是其他，参看末尾的相关链接。</p>
 <h3 id="">注意事项：</h3>
 <p>OS X 或者 linux 系统有个系统命令叫 <code>less</code>, 所以不要搞混了哦，我们上文说的 less 对应的命令是 <strong><code>lessc</code></strong>.</p>
-<pre><code>npm i -g less
+<pre><code class="lang-bash">npm i -g less
 lessc index.less
-</code></pre><h3 id="">参考链接：</h3>
+</code></pre>
+<h3 id="">参考链接：</h3>
 <ul>
 <li><a href="http://lesscss.org/features/#import-options" target="_blank">less import option</a></li>
 <li><a href="http://learnboost.github.io/stylus/docs/executable.html" target="_blank">stylus --include-css(网页搜索即可)</a></li>
@@ -343,6 +348,10 @@ lessc index.less
 
     
     <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>

@@ -2,8 +2,8 @@
 
 假设有这样一段代码：
 
-```
-// index.styl
+```css
+/* index.styl */
 
 @import './header.css'
 
@@ -14,7 +14,7 @@ body {
 
 那执行 `stylus index.styl > index.css` 编译后会生成这样的 `index.css`:
 
-```
+```css
 @import './header.css'
 
 body {
@@ -30,8 +30,8 @@ stylus index.styl > index.css --include-css
 
 对于同样的问题，`less` 是如何解决的呢：
 
-```
-// index.less
+```css
+/* index.less */
 @import (inline) './header.css'
 ```
 
@@ -41,7 +41,7 @@ stylus index.styl > index.css --include-css
 
 OS X 或者 linux 系统有个系统命令叫 `less`, 所以不要搞混了哦，我们上文说的 less 对应的命令是 **`lessc`**.
 
-```
+```bash
 npm i -g less
 lessc index.less
 ```
