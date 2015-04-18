@@ -8,5 +8,25 @@ url: "http://sobear.me" # the base hostname & protocol for your site
 twitter_username: imsobear
 github_username:  imsobear
 
+excerpt_separator: "<!--more-->"
+highlighter: pygments
+permalink: /:categories/:title/
+
+navigation:
+- text: 前端
+  url: /front
+- text: nodejs
+  url: /nodejs
+- text: 生活
+  url: /life
+- text: 其他
+  url: /others
+
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: assets/scss
+  style: :compressed # You might prefer to minify using :compressed
+
