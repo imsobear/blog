@@ -2,7 +2,7 @@
 layout: post
 title:  "说说坑吧"
 date: 2015-04-17 21:43:01
-categories: front es6
+published: false
 ---
 
 ## 坑是如何产生的
