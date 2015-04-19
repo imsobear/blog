@@ -1,23 +1,23 @@
-<header class="site-header">
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <a  href="/" class="navbar-brand">{{ site.title }}</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav">
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <ul class="site-category">
         {% for link in site.navigation %}
+
         {% assign current = nil %}
         {% if page.url contains link.url %}
-        {% assign current = 'is-active' %}
+        {% assign current = 'active' %}
         {% endif %}
-        <li class="{{ current }}">
-          <a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
+
+        <li>
+          <a class="{{ current }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
         </li>
+
         {% endfor %}
-      </ul>
     </nav>
-
   </div>
-
 </header>

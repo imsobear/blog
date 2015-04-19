@@ -20,6 +20,9 @@ nvm install iojs-v1.6.1
 nvm alias default iojs-v1.6.1
 ```
 
+
+<!-- more -->
+
 ## cnpm & tnpm
 
 ```

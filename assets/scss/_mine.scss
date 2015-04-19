@@ -1,0 +1,107 @@
+$bg: #28323B;
+$words: #555E63;
+$green: #30CDB0;
+
+pre {
+	border: none;
+	padding: 0;
+}
+
+body {
+
+	background-color: #EAF4F6;
+
+	a, a:visited {
+		color: $green;
+	}
+
+
+}
+
+
+/**
+ * navbar and footer
+ */
+.navbar {
+	li >a:hover, li >a.active {
+ 		background-color: $words;
+ 		// color: $bg;
+ 	}
+
+ 	.navbar-brand {
+ 		margin-right: 40px;
+ 		width: 50px;
+ 		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		padding: 0;
+		background-color: $green;
+		color: #fff;
+		border-radius: 50%;
+		transition: all 0.3s;
+
+ 		&:hover {
+			transform: rotate(45deg);
+			transform-origin: 0 0;
+ 		}
+ 	}
+
+}
+.navbar, footer {
+ 	background: $bg;
+ 	color: #fff;
+ 	margin-bottom: 0;
+
+ 	a, a:visited {
+ 		color: #fff;
+ 	}
+}
+footer {
+	.contact-list {
+		a:hover, a:visited {
+			color: #fff;
+		}
+	}
+}
+
+
+.page-content {
+	.wrapper {
+		padding: 20px 30px;
+		background-color: #fff;
+		  max-width: -webkit-calc(966px - (30px * 2));
+		  max-width: calc(966px - (30px * 2));
+	}
+}
+
+.post {
+	border-bottom: 1px dotted #666;
+  padding: 20px 0;
+}
+.post-title {
+	font-size: 36px;
+}
+
+.read-more {
+	display: block;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background: $green;
+	color: #fff;
+	border-radius: 25px;
+	text-decoration: none;
+
+	transition: background 0.3s;
+
+	&:hover {
+		text-decoration: none;
+		background-color: #21E9B7;
+		color: #fff;
+	}
+
+	&:visited {
+		color: #fff;
+	}
+}

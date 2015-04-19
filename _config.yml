@@ -8,8 +8,7 @@ url: "http://sobear.me" # the base hostname & protocol for your site
 twitter_username: imsobear
 github_username:  imsobear
 
-excerpt_separator: "<!--more-->"
-highlighter: pygments
+excerpt_separator: "<!-- more -->"
 permalink: /:categories/:title/
 
 navigation:

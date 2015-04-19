@@ -3,12 +3,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>Not A Number</title>
 
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <link href="http://gtms04.alicdn.com/tps/i4/TB1pNVTHFXXXXbWXVXXEDhGGXXX-32-32.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+	<link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.3.1/css/bootstrap.css">
+	<link rel="stylesheet" href="http://cdn.staticfile.org/typo.css/1.1/typo.min.css"></link>
   <link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" href="http://cdn.staticfile.org/highlight.js/8.3/styles/codepen-embed.min.css">
 
 </head>

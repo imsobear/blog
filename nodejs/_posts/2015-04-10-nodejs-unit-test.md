@@ -8,7 +8,7 @@ date:   2015-04-10 21:43:01
 
 如下代码：
 
-```js
+```javascript
 // helper
 
 exports.parse = function () {
@@ -20,9 +20,11 @@ function privateMethod () {
 }
 ```
 
+<!-- more -->
+
 对于 `helper.parse` 方法我们很容易写单元测试：
 
-```js
+```javascript
 // helper.test.js
 var helper = require('lib/helper');
 
@@ -39,7 +41,7 @@ describe('lib/helper.js', function () {
 npm install rewire --save
 ```
 
-```js
+```javascript
 // helper.test.js
 var rewire = require('rewire');
 var helper = rewire('../lib/helper');
@@ -57,7 +59,7 @@ describe('lib/helper.js', function () {
 
 ### 用 should 测试 `throw err` 的情况：
 
-```js
+```javascript
 (function () {
     helper.validateConfig(cfg);
 }).should.throw();
@@ -69,7 +71,7 @@ helper.validateConfig.should.throw();
 
 ### 用 should 测试没有抛错的情况
 
-```js
+```javascript
 fs.remove(buildFile, function (err) {
     should.not.exist(err);
 	done();

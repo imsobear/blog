@@ -18,6 +18,8 @@ body {
 
 那执行 `stylus index.styl > index.css` 编译后会生成这样的 `index.css`:
 
+<!-- more -->
+
 ```css
 @import './header.css'
 
