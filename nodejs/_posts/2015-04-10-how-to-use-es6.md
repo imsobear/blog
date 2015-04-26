@@ -64,6 +64,10 @@ NODE_ENV=test ./node_modules/.bin/mocha --compilers js:babel/register
 
 I dont't know
 
+```
+pm2 start app.js --interpreter ./node_modules/.bin/babel-node
+```
+
 - React
 - `gulp-babel`
 
