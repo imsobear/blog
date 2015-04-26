@@ -2,7 +2,7 @@
 
 > Not a number
 
-My blog, Just for fun.
+[sobear.me](http://sobear.me), My blog, Just for fun.
 
 ## Debug
 
