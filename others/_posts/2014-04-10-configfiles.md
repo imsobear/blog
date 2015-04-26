@@ -4,6 +4,9 @@ title:  "常用配置文件"
 date:   2015-04-10 21:43:01
 ---
 
+收录平时常用的配置文件，如：`.gitignore`, `.editorconfig`, `.eslintrc`, `~/.ssh/config.git/config`
+
+<!-- more -->
 
 ## .gitignore
 
@@ -26,6 +29,8 @@ indent_size = 2
 ```
 
 ## .eslintrc
+
+[airbnb/javascript](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc)
 
 ```
 {
@@ -56,6 +61,8 @@ indent_size = 2
 
 ## ~/.ssh/config
 
+git 配置多个帐号：
+
 ```bash
 Host github.com
   HostName github.com
@@ -69,6 +76,8 @@ Host gitlab.alibaba-inc.com
 ```
 
 ## .git/config
+
+配置当前仓库的提交用户信息
 
 ```
 [user]

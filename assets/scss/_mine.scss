@@ -9,22 +9,58 @@ pre {
 
 body {
 
+	font: 14px/1.5 'Helvetica-Neue', Helvetica, Arial, 'STheiti','MicroSoft Yahei', tahoma, sans-serif;
+
 	background-color: #EAF4F6;
 
 	a, a:visited {
 		color: $green;
 	}
+
+	a:hover {
+		text-decoration: none;
+		color: $green;
+		opacity: 0.6;
+	}
+}
+.container {
+	width: 990px !important;
+	padding: 0;
 }
 
 hr {
 	margin: 15px 0;
 }
 
+.post-content {
+	h2, h3 {
+		margin: 25px 0;
+	}
+}
+
+h1 {
+	font-size: 30px !important;
+}
+h2 {
+	font-size: 26px !important;
+}
+h3 {
+	font-size: 22px !important;
+}
+h4 {
+	font-size: 28px !important;
+}
+h5 {
+	font-size: 14px !important;
+}
 
 /**
  * navbar and footer
  */
 .navbar {
+
+	font-size: 14px;
+
 	li >a:hover, li >a.active {
  		background-color: $words;
  		// color: $bg;
@@ -32,6 +68,7 @@ hr {
 
  	.navbar-brand {
  		margin-right: 40px;
+ 		margin-left: 0 !important;
  		width: 50px;
  		height: 50px;
 		line-height: 50px;
@@ -43,8 +80,8 @@ hr {
 		transition: all 0.3s;
 
  		&:hover {
-			transform: rotate(45deg);
-			transform-origin: 0 0;
+			transform: rotate(90deg);
+			opacity: 1;
  		}
  	}
 
@@ -57,11 +94,15 @@ hr {
  	a, a:visited {
  		color: #fff;
  	}
+ 	a:hover {
+ 		opacity: 1;
+ 	}
 }
 footer {
 	.contact-list {
 		a:hover, a:visited {
 			color: #fff;
+			opacity: 1;
 		}
 	}
 }
@@ -69,19 +110,35 @@ footer {
 
 .page-content {
 	.wrapper {
-		padding: 20px 30px;
+		width: 990px;
+		padding: 20px 60px;
 		background-color: #fff;
-		  max-width: -webkit-calc(966px - (30px * 2));
-		  max-width: calc(966px - (30px * 2));
+		max-width: none;
+	}
+}
+.site-footer {
+	.wrapper {
+		width: 990px;
+		padding: 20px 0;
+		max-width: none;
 	}
 }
 
 .post {
 	border-bottom: 1px dotted #666;
-  padding: 20px 0;
+  padding: 10px 0;
+}
+.post:last-child {
+	border-bottom: none;
 }
 .post-title {
 	font-size: 36px;
+}
+
+.post-time {
+  font-size: 20px;
+  color: #777;
+  padding-right: 10px;
 }
 
 .read-more {

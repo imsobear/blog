@@ -7,6 +7,8 @@ published: false
 
 抱怨项目里的坑是个再常见不过的事情了：
 
+<!-- more -->
+
 - kissy 版本过低 (<1.3.x)
 - 项目没有 `README`
 - 代码很糟糕：没有注释？耦合度高？线上小 bug 不断？whatever.

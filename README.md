@@ -1,6 +1,4 @@
-# NAN
-
------------
+# !!NAN
 
 > Not a number
 

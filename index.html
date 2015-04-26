@@ -6,14 +6,14 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <p class="post-meta">{{ post.date }}</p>
+      {% include post-item.html %}
 
-      <div class="entry">
+
+      <!-- <div class="entry">
         {{ post.excerpt }}
-      </div>
+      </div> -->
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">阅读全文</a>
+      <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">阅读全文</a> -->
     </article>
   {% endfor %}
 </div>
