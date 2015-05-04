@@ -2,7 +2,6 @@
 layout: post
 title:  "不挖坑比努力填坑更值得"
 date: 2015-04-17 21:43:01
-published: false
 ---
 
 抱怨项目里的坑是个再常见不过的事情了：

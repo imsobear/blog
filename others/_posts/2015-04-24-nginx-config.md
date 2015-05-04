@@ -25,26 +25,26 @@ nginx 的配置文件以及常用的命令等。
     # uitest client
      server {
         listen 80;
-        server_name uitest.taobao.net;
+        server_name blog.sobear.me;
         location / {
             proxy_set_header Host $host:80;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header Via "nginx";
-            proxy_pass http://uitest.taobao.net:3000;
+            proxy_pass http://blog.sobear.me:3000;
         }
     }
      # uitest server
      server {
         listen 80;
-        server_name server.uitest.taobao.net;
+        server_name xxx.sobear.me;
 
         location / {
             proxy_set_header Host $host:80;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header Via "nginx";
-            proxy_pass http://server.uitest.taobao.net:9090;
+            proxy_pass http://xxx.sobear.me:9090;
         }
     }
 }

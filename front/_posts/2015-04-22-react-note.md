@@ -4,7 +4,6 @@ title:  "React 笔记"
 date:   2015-04-22 14:43:01
 ---
 
-
 ## 为元素设置自定义属性：
 
 参考：[自定义 HTML 属性](http://facebook.github.io/react/docs/jsx-gotchas-zh-CN.html#-html-)
