@@ -2,7 +2,7 @@
 layout: post
 title:  "现在就来使用 ES6"
 date:   2015-04-10 21:43:01
-published: false
+published: true
 ---
 
 ## ES6 简介
