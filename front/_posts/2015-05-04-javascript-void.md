@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "javascript:void"
+title:  "如何阻止 a 链接的默认行为"
 date:   2015-05-04 11:47
 ---
 
@@ -33,7 +33,7 @@ Uncaught SyntaxError: Unexpected end of input
 
 这个错误很难定位，因为错误在 html 中，根本没有堆栈信息。
 
-小伙伴推荐的另一种写法：`javascript:;`
+小伙伴推荐的另一种写法：`javascript:;`, 又短又好用。
  
 
 
