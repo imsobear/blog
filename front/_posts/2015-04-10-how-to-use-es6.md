@@ -65,6 +65,26 @@ a = ["Dave"];    // not use
 
 - `var self = this`, 见鬼去吧
 
+```
+var foo = {
+
+  nums: [1, 2, 3],
+
+  addOne(num) {
+    return num + 1;
+  },
+
+  go: {
+    this.nums.forEach((num) => {
+      console.log(this.addOne(num));
+    });
+  }
+
+};
+
+foo.go(); // 2,3,4
+```
+
 ### `模板字符串`
 
 ### `函数默认参数`
