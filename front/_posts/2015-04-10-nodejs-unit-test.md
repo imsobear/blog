@@ -86,4 +86,11 @@ fs.remove(buildFile, function (err) {
 ```
 
 
+## 用 should 测试 null 值
+
+```javascript
+(task.followers === null).should.be.true;
+```
+
+
 
