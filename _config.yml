@@ -12,6 +12,8 @@ excerpt_separator: "<!-- more -->"
 permalink: /:year/:month/:title.html
 
 navigation:
+- text: 一些分享
+  url: /assets/ppt/index.html
 - text: 关于
   url: /about
 
