@@ -11,8 +11,9 @@ body {
 
 	font: 14px/1.5 'Helvetica Neue', Helvetica, Arial, 'Heiti SC', 'Microsoft Yahei', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti, SimSun, sans-serif;
 
-	background-color: #EAF4F6;
+	// background-color: #EAF4F6;
 
+    background-color: #fff;
 	color: #2B2F37;
 
 	a, a:visited {
@@ -39,55 +40,48 @@ hr {
  */
 .navbar {
 
-	font-size: 14px;
+    font-size: 14px;
+    background-color: #fff;
+    color: rgba(0,0,0,0.6);
+    box-shadow: 0 0 1px rgba(0,0,0,0.15);
 
-	li >a:hover, li >a.active {
- 		background-color: $words;
- 		// color: $bg;
- 	}
+    li >a:hover, li >a.active {
+        // background-color: $words;
+        // color: $bg;
+    }
 
- 	.navbar-brand {
- 		margin-right: 40px;
- 		margin-left: 0 !important;
- 		width: 50px;
- 		height: 50px;
-		line-height: 50px;
-		text-align: center;
-		padding: 0;
-		background-color: $green;
-		color: #fff;
-		border-radius: 50%;
-		transition: all 0.3s;
+    .navbar-brand {
+        margin-right: 40px;
+        margin-left: 0 !important;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        padding: 0;
+    }
 
- 		&:hover {
-			transform: rotate(90deg);
-			opacity: 1;
- 		}
- 	}
+    .navbar-collapse {
+        float: right;
+    }
 
-}
-.navbar-collapse {
-	float: right;
-}
-.navbar, footer {
- 	background: $bg;
- 	color: #fff;
- 	margin-bottom: 0;
-
- 	a, a:visited {
- 		color: #fff;
- 	}
- 	a:hover {
- 		opacity: 1;
- 	}
 }
 footer {
-	.contact-list {
-		a:hover, a:visited {
-			color: #fff;
-			opacity: 1;
-		}
-	}
+    background: $bg;
+    color: #fff;
+    margin-bottom: 0;
+
+    a, a:visited {
+        color: #fff;
+    }
+    a:hover {
+        opacity: 1;
+    }
+    .contact-list {
+        a:hover, a:visited {
+            color: #fff;
+            opacity: 1;
+        }
+    }
 }
 
 .post-item-title {
@@ -114,7 +108,7 @@ footer {
 // 文章列表页面
 .posts {
 	.posts-item {
-		border-bottom: 1px dotted #666;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
 		padding: 10px 0;
 	}
 	.posts-item:last-child {
