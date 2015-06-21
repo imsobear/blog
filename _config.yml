@@ -9,15 +9,9 @@ twitter_username: imsobear
 github_username:  imsobear
 
 excerpt_separator: "<!-- more -->"
-permalink: /:categories/:year/:month/:title.html
+permalink: /:year/:month/:title.html
 
 navigation:
-- text: 前端
-  url: /front
-- text: 生活
-  url: /life
-- text: 其他
-  url: /others
 - text: 关于
   url: /about
 

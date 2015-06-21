@@ -13,6 +13,6 @@ jekyll server
 ## Deploy
 
 ```
-make build
+make deploy
 ```
 

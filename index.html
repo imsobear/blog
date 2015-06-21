@@ -4,16 +4,11 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="posts-item">
-
-      {% include post-item.html %}
-
-
-      <!-- <div class="entry">
-        {{ post.excerpt }}
-      </div> -->
-
-      <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">阅读全文</a> -->
-    </article>
+  <article class="posts-item">
+  	<h3 class="post-item-title">
+  		<span class="post-time">{{ post.date | date: "%Y-%m-%d" }}</span>
+  		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+  	</h3>
+  </article>
   {% endfor %}
 </div>
