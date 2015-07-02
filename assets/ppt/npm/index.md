@@ -16,7 +16,8 @@ speaker: 大果
 ------
 
 - [sindresorhus](https://github.com/sindresorhus) & [kevva](https://github.com/kevva): 
-> [wifi-name](https://github.com/kevva/wifi-name/blob/master/index.js) = osx-wifi-name + win-wifi-name + linux-wifi-name
+
+<small style="font-size:16px;text-indent:50px;">[wifi-name](https://github.com/kevva/wifi-name/blob/master/index.js) = osx-wifi-name + win-wifi-name + linux-wifi-name</small>
 - 功能更加独立，可以把重复的事情做好
 - 可以开心的刷 github ...
 - 但是，真的有点奇葩
