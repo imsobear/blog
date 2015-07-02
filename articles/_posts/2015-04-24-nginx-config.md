@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "nginx 常用配置"
+title:  "nginx 知识汇总"
 date:   2015-04-24 9:00:01
 ---
 
 nginx 的配置文件以及常用的命令等。
-
-<!-- more -->
 
 ## 常用命令：
 
@@ -16,7 +14,16 @@ nginx 的配置文件以及常用的命令等。
     Linux: `/etc/nginx/nginx.conf`
 
 - 测试配置文件是否 OK: `nginx -t`
-- 启动/停止/重启：`nginx -s start/stop/reload`
+- 停止/重启：`nginx -s stop/reload`
+
+
+## 常见问题：
+
+### 执行重启命令时报 pid 的错误
+
+参考：http://stackoverflow.com/questions/7646972/nginx-invalid-pid-number
+
+执行 `udo nginx -c /usr/local/etc/nginx/nginx.conf` 直接启动即可。
 
 ## 配置多个子域：
 
