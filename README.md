@@ -2,8 +2,8 @@
 
 > Not a number
 
-- blog: [sobear.me](http://imsobear.github.io/blog/), My blog, Just for fun.
-- 分享：http://imsobear.github.io/blog/assets/ppt
+- [sobear.me](http://sobear.me), My blog, Just for fun.
+- [一些分享](http://sobear.me/assets/ppt)
 
 ## Debug
 
