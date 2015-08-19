@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "nodejs 环境准备"
+title:  "Nodejs 环境配置终极解决方案"
 date:   2015-04-10 21:43:01
 ---
 
