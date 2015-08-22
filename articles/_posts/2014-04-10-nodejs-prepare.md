@@ -23,7 +23,7 @@ nvm alias default iojs-v3.0.0
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 // tnpm: 公司内部
-npm install -g tnpm --registry=http://registry.npm.alibaba-inc.com
+npm install -g tnpm --registry=xxxx
 ```
 
 ## 不同版本的 Nodejs 共享全局的 npm
@@ -38,7 +38,7 @@ npm config get prefix   // ~/.nvm/versions/0.12.6/...
 npm config set prefix /Users/guo/npm-global
 ```
 
-设置之后，再用 npm 安装全局模块时就会放在 npm-global 下，注意 **npm/cnpm/tnpm 的 prefix 是各自独立的，因此每个都需要设置一下**。
+设置之后，再用 npm 安装全局模块时就会放在 npm-global 下，注意 **npm/cnpm 的 prefix 是各自独立的，因此每个都需要设置一下**。
 
 然后呢，全局模块的可执行文件也会放在 `npm-global/bin` 目录下，想要执行这些命令的话，还需要添加一条 PATH, 打开你的 `.zshrc` 或者 `.bashrc`, 末尾添加一行：
 
