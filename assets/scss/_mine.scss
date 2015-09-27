@@ -46,7 +46,14 @@ hr {
     margin: 0 auto;
 }
 .page-content {
+
+    min-height: 600px;
     padding: 20px 0;
+
+    .post {
+        max-width: 900px;
+        // margin: 0 auto;
+    }
 }
 
 
@@ -80,19 +87,19 @@ hr {
     body .page-content,
     body .markdown-body  {
         h1 {
-            font-size: 28px;
+            font-size: 26px;
         }
         h2 {
-            font-size: 24px;
+            font-size: 22px;
         }
         h3 {
-            font-size: 20px;
+            font-size: 18px;
         }
         h4 {
-            font-size: 16px;
+            font-size: 14px;
         }
         h5 {
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 }
