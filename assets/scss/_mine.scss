@@ -26,13 +26,75 @@ body {
 		opacity: 0.6;
 	}
 }
-.container {
-	width: 990px !important;
-	padding: 0;
-}
 
 hr {
-	margin: 15px 0;
+    margin: 15px 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit !important;
+}
+.container {
+    width: 990px !important;
+    margin: 0 auto;
+    padding: 0;
+    max-width: none;
+}
+.wrapper {
+    width: 990px !important;
+    max-width: none;
+    margin: 0 auto;
+}
+.page-content {
+    padding: 20px 0;
+}
+
+
+// 手机
+@media screen and (max-width: 780px) {
+    .container {
+        width: auto !important;
+    }
+    .wrapper {
+        width: auto !important;
+    }
+    .navbar {
+        margin-bottom: 0 !important;
+    }
+    .navbar-header {
+        margin: 0 !important;
+    }
+    .navbar-brand {
+        width: 100%;
+    }
+    .post-time {
+        display: none;
+    }
+    .posts-item .post-item-title {
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .footer-col-1 {
+        display: none;
+    }
+    body .page-content,
+    body .markdown-body  {
+        h1 {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+        h5 {
+            font-size: 14px;
+        }
+    }
 }
 
 /**
@@ -53,7 +115,6 @@ hr {
     .navbar-brand {
         margin-right: 40px;
         margin-left: 0 !important;
-        width: 50px;
         height: 50px;
         line-height: 50px;
         text-align: center;
@@ -86,23 +147,6 @@ footer {
 
 .post-item-title {
 	margin: 5px 0;
-}
-
-
-.page-content {
-	.wrapper {
-		width: 990px;
-		padding: 20px 100px;
-		background-color: #fff;
-		max-width: none;
-	}
-}
-.site-footer {
-	.wrapper {
-		width: 990px;
-		padding: 20px 0;
-		max-width: none;
-	}
 }
 
 // 文章列表页面
