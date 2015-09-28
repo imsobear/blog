@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "越累越喜欢的韩国电影"
+title: "越来越喜欢的韩国电影"
 date:  2015-09-28 23:00
 published: true
 ---
