@@ -72,10 +72,21 @@ hr {
     .navbar {
         margin-bottom: 0 !important;
         .navbar-brand {
-            width: 100%;
             float: none;
             display: block;
-            margin: 5px auto !important;
+        }
+        .navbar-header {
+            width: 40px;
+            margin: 0 auto !important;
+        }
+        .navbar-collapse {
+            margin: 0;
+            visibility: visible;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 10px;
         }
     }
     .navbar-header {
