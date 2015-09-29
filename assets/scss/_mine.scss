@@ -9,7 +9,7 @@ pre {
 
 body {
 
-	font: 14px/1.5 'Helvetica Neue', Helvetica, Arial, 'Heiti SC', 'Microsoft Yahei', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti, SimSun, sans-serif;
+	font: 14px/1.5 'Helvetica Neue', Helvetica, Arial, PingHei, 'Heiti SC', 'Microsoft Yahei', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti, SimSun, sans-serif;
 
 	// background-color: #EAF4F6;
 
@@ -25,6 +25,10 @@ body {
 		color: $green;
 		opacity: 0.6;
 	}
+
+    * {
+        // font-weight: 100;
+    }
 }
 
 hr {
@@ -126,6 +130,11 @@ hr {
         line-height: 50px;
         text-align: center;
         padding: 0;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(100, 100, 100, 0.7);
+        border-radius: 50%;
+        color: #fff;
     }
 
     .navbar-collapse {
@@ -167,6 +176,8 @@ footer {
 
 .post-item-title {
 	margin: 5px 0;
+    font-size: 22px;
+    font-weight: normal;
 }
 
 // 文章列表页面
@@ -218,9 +229,9 @@ footer {
     text-size-adjust: 100%;
     color: #333;
     overflow: hidden;
-    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+    // font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
     word-wrap: break-word;
 }
 .markdown-body a {
@@ -411,7 +422,7 @@ footer {
 .markdown-body h6 {
     position: relative;
     margin-top: 1em;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     font-weight: bold;
     line-height: 1.4;
 }
@@ -495,7 +506,7 @@ footer {
 .markdown-body table,
 .markdown-body pre {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 .markdown-body hr {
     height: 4px;
