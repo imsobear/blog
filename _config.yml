@@ -1,12 +1,9 @@
 # Site settings
-title: NaN
+title: 果
 email: sobear.me@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  just for fun :)
+description: just for fun :)
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://sobear.me" # the base hostname & protocol for your site
-twitter_username: imsobear
-github_username:  imsobear
 
 excerpt_separator: "<!-- more -->"
 permalink: /:year/:month/:title.html
@@ -14,6 +11,25 @@ permalink: /:year/:month/:title.html
 navigation:
 - text: 关于
   url: /about
+
+sns:
+- type: github
+  name: imsobear
+  url: https://github.com/imsobear
+- type: twitter
+  name: imsobear
+  url: https://twitter.com/imsobear
+- type: weibo
+  name: 帅果同学
+  url: http://weibo.com/2808063372/profile
+
+
+# 友情链接
+links:
+- text: 荒芜之地
+  url: http://darkkate.com/
+- text: 一树小草
+  url: http://spdf.me/
 
 # Build settings
 markdown: redcarpet

@@ -138,11 +138,24 @@ footer {
     color: #fff;
     margin-bottom: 0;
 
+    li {
+        list-style: disc;
+        margin-left: 30px;
+        line-height: 1.8;
+    }
+
+    .title {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #828282;
+    }
+
     a, a:visited {
         color: #fff;
     }
     a:hover {
         opacity: 1;
+        text-decoration: underline;
     }
     .contact-list {
         a:hover, a:visited {
