@@ -2,6 +2,7 @@
 layout: post
 title:  "nodejs 单元测试"
 date:   2015-04-10 21:43:01
+published: false
 ---
 
 ## nodejs 测试模块的私有方法：

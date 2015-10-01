@@ -2,6 +2,7 @@
 layout: post
 title:  "常用配置文件"
 date:   2015-04-10 21:43:01
+published: false
 ---
 
 收录平时常用的配置文件，如：`.gitignore`, `.editorconfig`, `.eslintrc`, `~/.ssh/config.git/config`

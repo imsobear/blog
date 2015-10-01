@@ -2,6 +2,7 @@
 layout: post
 title:  "如何阻止 a 链接的默认行为"
 date:   2015-05-04 11:47
+published: false
 ---
 
 阻止 `<a></a>` 的默认事件大概有以下方法：

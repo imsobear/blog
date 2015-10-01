@@ -2,6 +2,7 @@
 layout: post
 title:  "nginx 知识汇总"
 date:   2015-04-24 9:00:01
+published: false
 ---
 
 nginx 的配置文件以及常用的命令等。
