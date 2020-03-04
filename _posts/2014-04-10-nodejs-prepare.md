@@ -14,8 +14,8 @@ curl https://raw.githubusercontent.com/cnpm/nvm/master/install.sh | bash
 // add to .bashrc or .zshrc
 source ~/.nvm/nvm.sh
 
-nvm install iojs-v3.0.0
-nvm alias default iojs-v3.0.0
+nvm install 12
+nvm alias default 12
 ```
 
 ## cnpm/tnpm 加速 npm
